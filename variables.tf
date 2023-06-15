@@ -21,6 +21,11 @@
 #######################################################################
 # External Secrets Operator
 
+variable "project_id" {
+  type        = string
+  description = "ID of the project"
+}
+
 variable "description" {
   type        = string
   description = "Description of the IAM application"
