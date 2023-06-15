@@ -10,13 +10,13 @@ Terraform module which configure *External Secrets Operator*  on Scaleway infras
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
-| <a name="requirement_scaleway"></a> [scaleway](#requirement\_scaleway) | >= 2.12 |
+| <a name="requirement_scaleway"></a> [scaleway](#requirement\_scaleway) | >= 2.12.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_scaleway"></a> [scaleway](#provider\_scaleway) | >= 2.12 |
+| <a name="provider_scaleway"></a> [scaleway](#provider\_scaleway) | >= 2.12.0 |
 
 ## Modules
 
