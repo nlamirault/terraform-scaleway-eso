@@ -29,4 +29,5 @@ variable "project_id" {
 variable "description" {
   type        = string
   description = "Description of the IAM application"
+  default     = ""
 }
