@@ -23,6 +23,8 @@ on:
 jobs:
   triage:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
     - name: label swapping
       uses: jinmayamashita/ready-for-review@1.0.0

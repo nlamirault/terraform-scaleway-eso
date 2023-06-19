@@ -26,7 +26,7 @@ resource "scaleway_iam_api_key" "this" {
 
 resource "scaleway_iam_group" "this" {
   name        = local.service_name
-  description = format("%s members", title(replace("-", " ", local.service_name)))
+  description = format("%s members", local.description)
   application_ids = [
     scaleway_iam_application.this.id
   ]
