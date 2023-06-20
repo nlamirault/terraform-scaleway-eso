@@ -16,7 +16,7 @@
 
 resource "scaleway_iam_application" "this" {
   name        = local.service_name
-  description = local.description
+  description = format("Application for %s on %s", local.app, var.cluster_name)
 }
 
 resource "scaleway_iam_api_key" "this" {
@@ -26,7 +26,7 @@ resource "scaleway_iam_api_key" "this" {
 
 resource "scaleway_iam_group" "this" {
   name        = local.service_name
-  description = format("%s members", local.description)
+  description = format("Members for %s on %s", local.app, var.cluster_name)
   application_ids = [
     scaleway_iam_application.this.id
   ]

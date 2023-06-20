@@ -26,8 +26,7 @@ variable "project_id" {
   description = "ID of the project"
 }
 
-variable "description" {
+variable "cluster_name" {
   type        = string
-  description = "Description of the IAM application"
-  default     = ""
+  description = "Name of the Kubernetes cluster"
 }

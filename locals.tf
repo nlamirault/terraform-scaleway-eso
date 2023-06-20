@@ -15,6 +15,6 @@
 # SPDX-License-Identifier: Apache-2.0
 
 locals {
-  service_name = "external-secrets-operator"
-  description  = var.description == "" ? format("%s. Made by Terraform", title(replace("-", " ", local.service_name))) : var.description
+  app          = "External Secrets Operator"
+  service_name = format("%s-eso", var.cluster_name)
 }
